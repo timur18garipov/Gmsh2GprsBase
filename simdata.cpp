@@ -187,8 +187,8 @@ void SimData::defineRockProperties()
     }
     else
     {
-      vsCellRockProps[icell].poro = 0.2;
-      vsCellRockProps[icell].perm = 0.1;
+      vsCellRockProps[icell].poro = 0.01;
+      vsCellRockProps[icell].perm = 0.0;
       vsCellRockProps[icell].perm_x = vsCellRockProps[icell].perm;
       vsCellRockProps[icell].perm_y = vsCellRockProps[icell].perm;
       vsCellRockProps[icell].perm_z = vsCellRockProps[icell].perm / 10.0;

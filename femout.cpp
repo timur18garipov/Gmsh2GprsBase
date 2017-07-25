@@ -729,6 +729,8 @@ void OutputData::writeGeomechDataNewKeywords()
   geomechfile << "\n/\n\n";
   geomechfile.close(); 
   
+
+#if 0
   outstring =   outputPath_ + "gm_fracprops.txt";   
   geomechfile.open ( outstring.c_str() );
 
@@ -829,6 +831,7 @@ void OutputData::writeGeomechDataNewKeywords()
   }
   geomechfile << "/" << endl << endl;
   geomechfile.close();  
+#endif
 
   outstring =   outputPath_ + "fl_satnum.txt";
     geomechfile.open(outstring.c_str()); 
