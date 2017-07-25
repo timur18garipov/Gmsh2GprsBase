@@ -17,11 +17,11 @@ void OutputData::writeGeomechDataNewKeywords()
   stringstream out;
   out << "model";
   out << "/";  
-  string outputPath_ = out.str();
+  string outputPath_ = ""; // out.str();
   
-#if defined(_WIN32)
+#if 0 //defined(_WIN32)
   _mkdir(outputPath_.c_str()); // create directory
-#else
+//#else
   mkdir(outputPath_.c_str(), 0777);
 #endif
   string outstring = pSim->outstream;

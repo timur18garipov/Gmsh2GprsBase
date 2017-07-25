@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_DEPRECATE
 #include "transes.hpp"
 #include "simdata.hpp"
 #include <random>
@@ -1178,7 +1179,7 @@ void CalcTranses::outputKarimi()
   stringstream out;  
   out << "model/";
   out << "/";
-  string outputPath_ = out.str();  
+  string outputPath_ = "";// out.str();
  //////////////////////////
 ///// OUTPUT Volumes /////
 //////////////////////////
