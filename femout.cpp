@@ -758,7 +758,7 @@ void OutputData::writeGeomechDataNewKeywords()
 
   c_.assign(b_.size(),0);
   for(unsigned int i = 0; i < b_.size(); i++)
-    c_[i] = b_[i] * 0.6 + 1.0;
+    c_[i] = b_[i] * 0.6 + 100.0;
   
   d_.assign(b_.size(),0);
   e_.assign(b_.size(),0);
