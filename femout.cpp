@@ -881,7 +881,8 @@ void OutputData::writeGeomechDataNewKeywords()
     for ( int iw = 0; iw < pSim->nWells; iw++ )
     {
       if(pSim->vsWell[iw].vID.size() > 0)
-	geomechfile <<  "W" << iw << " 1* " << pSim->vsWell[iw].vID[0]+1 << " 1 " <<  pSim->vsWell[iw].datum << " WATER /" << endl;
+	      //geomechfile <<  "W" << iw << " 1* " << pSim->vsWell[iw].vID[0]+1 << " 1 " <<  pSim->vsWell[iw].datum << " WATER /" << endl;
+        geomechfile << "W" << iw << " 1* " << pSim->vsWell[iw].vID[0] + 1 << " 1 1* WATER 3* NO /" << endl;
     }
     
     geomechfile << "/\n\n";
